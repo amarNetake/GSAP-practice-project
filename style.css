@@ -1,0 +1,97 @@
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'suse';
+     color: white;
+
+}
+
+html, body{
+     width: 100%;
+     height: 100%;
+}
+
+#main{
+     height: 100%;
+     width: 100%;
+     background-color: black;
+}
+
+#nav{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding: 10px 20px;
+     height: 60px;
+     /* background-color: aquamarine; */
+}
+
+#nav-part2{
+     display: flex;
+     align-items: center;
+     justify-content: space-around;
+     gap: 30px;
+}
+
+#nav h3{
+     font-weight: 300;
+}
+
+#nav>h3{
+     text-transform: uppercase;
+}
+
+/* ---------------------------------------------------------------------------------------------- */
+
+#main h1{
+     font-size: 8vmax;
+     text-transform: uppercase;
+     font-weight: 400;
+     line-height: 115px;
+     width: 70%;
+     /* background-color: red; */
+     margin-left: 24%;
+     z-index: 99;
+     position: relative;
+     /* mix-blend-mode: difference; */
+     color: #e3e3e3;
+     /* -webkit-text-stroke: 2px #444; New learning : To put border on text */
+     text-shadow:
+        1px 1px 0 black,   /* Bottom-right shadow */
+        -1px 1px 0 black,  /* Bottom-left shadow */
+        1px -1px 0 black,  /* Top-right shadow */
+        -1px -1px 0 black; /* Top-left shadow */
+     overflow : hidden;
+}
+
+#main h1:nth-of-type(1){
+     margin-top: 10%;
+}
+
+#main h1:nth-of-type(2){
+     text-align: center;
+}
+
+#main h1:last-of-type{
+     position: absolute;
+     left: 40px;
+}
+
+
+#main img{
+     justify-self: center;
+     height: 400px;
+     transform: scale(1.4);
+     position: absolute;
+     top: 25%;
+     left: 30%;
+     border-radius: 30px;
+     z-index: 2;
+}
+
+#main img:nth-of-type(1){
+     z-index: 1;
+     left: 31%;
+     rotate: -10deg;
+}
